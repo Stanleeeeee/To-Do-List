@@ -2,7 +2,7 @@
 
 # T0-Do List
 
-> Description the project.
+> This is a simple To-do List, the user can add a task, delete a task, edit a task and delete all completed tasks. The data gets stored in the local storage.
 
 
 ## Built With
