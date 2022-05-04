@@ -1,12 +1,11 @@
+/* eslint-disable */
 import _ from 'lodash';
 
-import "./style.css";
+import './style.css';
 
 const inputText = document.getElementById('add-list');
 const regex = /^\s+$/;
 const listContainer = document.querySelector('#list');
-
-
 const addBtn = document.querySelector('#add');
 const clearAllCompleted = document.getElementById('clear-all');
 
