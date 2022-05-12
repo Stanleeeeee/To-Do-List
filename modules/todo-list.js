@@ -96,9 +96,21 @@ export default class Task {
     this.showTasks();
   }
 
+  delete(index) {
+    if (index) {
+      this.task.splice(index, 1);
+      this.showTasks();
+    }
+  }
+
   static clearComplete = () => {
     this.tasks = this.tasks.filter((task) => task.completed !== true);
     localStorage.setItem('tasks', JSON.stringify(this.tasks));
+    this.showTasks();
+  }
+
+  clearAll() {
+    this.task.splice(0);
     this.showTasks();
   }
 
