@@ -1,230 +1,139 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: monospace, sans-serif;
-}
-
 body {
+  font-family: monospace, 'poppins', sans-serif;
+  background-color: lightcyan;
+}
+
+.main-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.todo-container {
+  width: 600px;
+  min-height: 150px;
+  margin: 0 auto;
+  margin-top: 50px;
+  box-shadow: rgba(13, 13, 14, 0.25) 0 30px 60px -12px, rgba(0, 0, 0, 0.3) 0 18px 36px -18px;
+}
+
+.todo-header {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(211, 209, 209);
-  padding: 0 10px 50px 10px;
-}
-
-h1 {
-  margin: 100px 0;
-  font-size: 2.8rem;
-}
-
-section {
-  border-left: 2px solid black;
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-  width: 90%;
-  max-width: 800px;
-  box-shadow: 20px 25px 15px 0 rgb(141, 140, 140);
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-h2 {
-  width: 100%;
-  font-weight: 700;
-  border-bottom: 1px solid gainsboro;
-  padding: 15px;
-}
-
-form {
-  display: flex;
-  padding: 15px;
-  border-bottom: 1px solid gainsboro;
-}
-
-input[type="text"] {
-  width: 100%;
-  border: none;
-  font-size: 1.4rem;
-  color: rgb(78, 77, 77);
-}
-
-input[type="text"]:focus {
-  outline: none;
-  background-color: rgb(217, 252, 237);
-}
-
-.todo {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  border-bottom: 1px solid gainsboro;
-  padding: 15px;
+  align-items: center;
+  padding: 0 10px;
+  height: 50px;
 }
 
-.item {
-  font-size: 1.1rem;
-  color: rgb(78, 77, 77);
-  font-weight: 500;
-  list-style: none;
-  width: 100%;
+.title {
+  margin: 0;
+  font-size: 30px;
+  color: gray;
 }
 
-input[type="checkbox"] {
-  margin-right: 20px;
-  width: 30px;
-  height: 25px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  outline: 2px solid black;
-  border-radius: 3px;
+.refresh {
+  margin-right: 15px;
+  color: gray;
 }
 
-input[type="checkbox"]:hover {
+hr {
+  margin: 0;
+  color: gray;
+}
+
+.add-task-container {
+  height: 50px;
+  padding: 5px;
+}
+
+.add-task-input {
+  border: 0;
+  border-radius: 0;
+  width: 90%;
+  height: inherit;
+  padding-left: 10px;
+  outline: none;
+}
+
+.add-task-input::placeholder {
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 200;
+  color: gray;
+}
+
+.add-task-btn {
+  display: inline;
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  height: inherit;
+  color: gray;
+}
+
+.add-task-btn:hover {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked::after {
-  content: "\2713";
-  height: 100%;
-  display: block;
-  text-align: center;
-  font-size: 1.4rem;
-  font-weight: 900;
-  color: rgb(8, 253, 151);
-  background-color: black;
-  outline: 2px solid black;
-  border-radius: 3px;
+.tasks-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  padding: 5px;
+}
+
+.check {
+  margin: 0 8px;
+  color: green;
+}
+
+.check:hover {
+  cursor: pointer;
+}
+
+.description {
+  width: 85%;
+  margin: 0 2px;
+  border: 0;
+  height: inherit;
+  outline: none;
 }
 
 .completed {
   text-decoration: line-through;
 }
 
-.focus {
-  animation: color-change 2s ease-out;
+.edit-icon {
+  margin: 0 8px;
+  color: gray;
 }
 
-@keyframes color-change {
-  0% {
-    background-color: #fff;
-  }
-
-  50% {
-    background-color: rgb(8, 253, 151);
-  }
-
-  100% {
-    background-color: #fff;
-  }
+.edit-icon:hover {
+  cursor: pointer;
 }
 
-.label {
-  margin-right: auto;
-}
-
-.delete-button {
-  width: 30px;
-  margin-right: 10px;
-  font-size: 1.2rem;
-  display: block;
-  height: 100%;
+.clear {
+  height: 50px;
+  padding: 0;
+  position: relative;
+  bottom: 0;
   text-align: center;
-  background-color: transparent;
-  border: none;
 }
 
-.delete-button::after {
-  content: "\274c";
-}
-
-.delete-button:hover {
-  cursor: pointer;
-}
-
-.edit-button {
-  padding: 2px 8px 2px 6px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  display: block;
-  background-color: black;
-  color: rgb(8, 253, 151);
-  border: none;
-  border-radius: 5px;
-}
-
-.edit-button:hover {
-  cursor: pointer;
-}
-
-#add {
-  background-color: black;
-  border: none;
-  padding: 8px 15px;
-  border-radius: 5px;
-}
-
-#add::after {
-  content: "\002b";
-  font-size: 1.8rem;
-  color: rgb(8, 253, 151);
-  font-weight: 700;
-}
-
-#add:hover {
-  cursor: pointer;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-  background-color: black;
-  border: none;
-  padding: 8px 15px;
-}
-
-.show::after {
-  content: "\21bb";
-  font-size: 1.8rem;
-  color: rgb(8, 253, 151);
-  font-weight: 700;
-}
-
-.show:hover {
-  cursor: pointer;
-}
-
-#clear-all {
+.clear-btn {
+  height: inherit;
   width: 100%;
-  border: none;
-  padding: 15px;
-  font-size: 1rem;
-  font-weight: 900;
-  color: rgb(253, 45, 8);
-  background-color: black;
+  border: 0;
+  background-color: blue;
+  color: red;
+  font-size: 18px;
 }
 
-#clear-all:hover {
+.clear-btn:hover {
   cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  input[type="text"] {
-    font-size: 1rem;
-  }
-
-  input[type="checkbox"] {
-    width: 45px;
-  }
-
-  .edit-button {
-    font-size: 1rem;
-  }
+  text-decoration: underline;
+  background-color: red;
+  color: black;
 }

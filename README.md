@@ -1,29 +1,49 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# T0-Do List
+# To-Do-List
 
-> This is a simple To-do List, the user can add a task, delete a task, edit a task and delete all completed tasks. The data gets stored in the local storage.
+> A simple to-do-list project with basic styling. The user can add a task, delete a task, edit a task and delete all completed tasks.
+> The data gets stored in the local storage.
 
 
 ## Built With
 
-- Html
-- css
-- Javascript
-- Webpack
+- HTML
+- CSS
+- JavaScript
+- webpack
+- modules
 
-## Live Demo (if available)
+## Live Site URL: https://stanleeeeee.github.io/To-Do-List/
 
-[Live Demo Link](https://stanleeeeee.github.io/To-Do-List/)
+## Getting Started
 
+
+### Prerequisites
+- web browser (e.g. Google Chrome, Firefox)
+- text editor (e.g. VSCode)
+- CLI/terminal
+
+### Clone this repository
+
+```
+git clone https://github.com/Stanleeeeee/To-Do-List.git
+```
+### Open the project in the browser
+
+```
+npm run start
+```
 
 
 ## Authors
 
 👤 **Ezeoke Stanley Ifeanyi**
 
-- GitHub: [@stanleeeeee](https://github.com/stanleeeeee)
+- GitHub: [@Stanleeeeee](https://github.com/Stanleeeeee)
 - Twitter: [@Stanmega89](https://twitter.com/Stanmega89)
+- LinkedIn: [Ezeoke-Stanley](https://linkedin.com/in/Ezeoke-Stanley)
+
 
 ## 🤝 Contributing
 
@@ -35,11 +55,6 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 

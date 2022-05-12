@@ -1,9 +1,9 @@
 /* eslint-disable */
 const path = require("path");
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: process.env.MODE_ENV === 'production' ? 'production' : 'development',
+  mode: "production",
   entry: "./src/index.js",
   devServer: {
     static: "./dist",
@@ -12,22 +12,18 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
-  plugins: [new HtmlWebpackPlugin()],
-  
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "To-Do_List",
+      template: "./src/index.html",
+    }),
+  ],
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
       },
-        {
-          test: /\.html$/i,
-          use: "html-loader",
-        },
-        {
-          test: /\.(js)$/,
-          use: "babel-loader"
-        }
     ],
   },
 };
