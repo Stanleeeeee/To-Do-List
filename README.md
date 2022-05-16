@@ -15,7 +15,7 @@
 - modules
 
 ## Live Site URL:
-[Live Demo Link](https://stanleeeeee.github.io/To-Do-List/)
+[Live Demo Link](https://stanleeeeee.github.io/To-Do-List/dist)
 
 ## Getting Started
 
