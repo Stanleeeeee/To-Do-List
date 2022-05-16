@@ -14,7 +14,8 @@
 - webpack
 - modules
 
-## Live Site URL: https://stanleeeeee.github.io/To-Do-List/
+## Live Site URL:
+[Live Demo Link](https://stanleeeeee.github.io/To-Do-List/)
 
 ## Getting Started
 
