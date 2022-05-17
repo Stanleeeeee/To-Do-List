@@ -18,7 +18,6 @@
 
 ## Getting Started
 
-
 ### Prerequisites
 - web browser (e.g. Google Chrome, Firefox)
 - text editor (e.g. VSCode)
@@ -34,7 +33,6 @@ git clone https://github.com/Stanleeeeee/To-Do-List.git
 ```
 npm run start
 ```
-
 
 ## Authors
 
