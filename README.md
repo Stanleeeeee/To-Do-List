@@ -14,6 +14,38 @@
 - webpack
 - modules
 
+## Live Site URL: https://stanleeeeee.github.io/To-Do-List/dist
+
+## Getting Started
+
+### Prerequisites
+- web browser (e.g. Google Chrome, Firefox)
+- text editor (e.g. VSCode)
+- CLI/terminal
+
+### Clone this repository
+
+```
+git clone https://github.com/Stanleeeeee/To-Do-List.git
+```
+### Open the project in the browser
+
+```
+npm run start
+```
+
+## Authors
+
+👤 **Ezeoke Stanley Ifeanyi**
+
+- GitHub: [@Stanleeeeee](https://github.com/Stanleeeeee)
+- Twitter: [@Stanmega89](https://twitter.com/Stanmega89)
+- LinkedIn: [Ezeoke-Stanley](https://linkedin.com/in/Ezeoke-Stanley)
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
