@@ -1,29 +1,40 @@
-/* eslint-disable */
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
-  mode: "production",
-  entry: "./src/index.js",
-  devServer: {
-    static: "./dist",
+  mode: 'production',
+  entry: {
+    bundle: path.resolve(__dirname, 'src/index.js'),
   },
   output: {
-    filename: "main.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name][contenthash].js',
+    clean: true,
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "To-Do_List",
-      template: "./src/index.html",
-    }),
-  ],
+
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    port: 3000,
+    open: true,
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
+  },
+
   module: {
-    rules: [
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
+    rules: [{
+      test: /\.css$/i,
+      use: ['style-loader', 'css-loader'],
+    },
     ],
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'setup',
+      template: './src/index.html',
+    }),
+  ],
 };
